@@ -635,7 +635,7 @@ class UserIdentityApi(Api):
         return UserIdentityRequest(self).delete(user, identity)
 
 
-class UserApi(IncrementalApi, CRUDExternalApi):
+class UserApi(TaggableApi, IncrementalApi, CRUDExternalApi):
     """
     The UserApi adds some User specific functionality
     """
